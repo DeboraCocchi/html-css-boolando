@@ -9,6 +9,7 @@
   max-width:1350px;
   border:1px dotted pink;
   margin:0 auto;
+
 }
 
 .debug{
@@ -25,6 +26,7 @@ header{
   height:70px;
   width:100%;
   position: fixed;
+  z-index:999;
 }
 
 header .container{
@@ -38,6 +40,7 @@ header .container{
 
 header .logo{
   width:150px;
+  vertical-align: middle;
 }
 
 header a{
@@ -72,7 +75,7 @@ main .row{
 main .row .card{
   min-width:280px;
   width: calc(94% / 3);
-  margin:1%;
+  margin: 5% 1% 1%;
   position:relative;
 }
 
@@ -95,7 +98,6 @@ main .row .card .card-photo:hover .first-photo{
 
 main .row .card .card-details{
   min-height:50px;
-  background-color: wheat;
   padding:3px;
   text-align: left;
 }
