@@ -4,22 +4,25 @@
   box-sizing: border-box;
 }
 
-.container{
-  width:80%;
-  max-width:1350px;
-  border:1px dotted pink;
-  margin:0 auto;
-
-}
-
-.debug{
-  background-color: blueviolet;
-  border:1px dashed white;
-}
-
 body{
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
+
+.container{
+  width:80%;
+  max-width:1350px;
+  margin:0 auto;
+}
+
+ul{
+  list-style: none;
+}
+
+ul li{
+  display: inline-block;
+}
+
+/* header */
 
 header{
   background-color: #FF6900;
@@ -31,32 +34,33 @@ header{
 
 header .container{
   color:white;
-  padding:15px 20px;
+  padding:15px 0;
   display:flex;
   height:100%;
   align-items: center;
   justify-content: space-between;
 }
 
-header .logo{
+header .container .logo{
   width:150px;
   vertical-align: middle;
 }
 
-header a{
+header a, footer a{
   text-decoration: none;
   color:white;
 }
 
-header .links a{
+header .container .links a{
   margin-right:10px;
+  font-size:0.9rem;
 }
 
-header a:hover{
+header a:hover, footer .container .company .links a:hover{
   text-decoration: underline;
 }
 
-header  .shop-icons a{
+header .container .shop-icons a{
   margin-left:10px;
 }
 
@@ -75,7 +79,7 @@ main .row{
 main .row .card{
   min-width:280px;
   width: calc(94% / 3);
-  margin: 5% 1% 1%;
+  margin: 3% 0.5%;
   position:relative;
 }
 
@@ -108,6 +112,7 @@ main .row .card .card-details .brand{
 
 main .row .card .card-details .description{
   text-transform: uppercase;
+  font-weight: 600;
 }
 main .row .card .card-details .new-price{
   color:red;
@@ -179,3 +184,35 @@ main .row .card .clothes-info .eco{
   background-color: green;
 }
 
+/* footer */
+
+footer{
+  background-color: #1A1A1A;
+  height:70px;
+  color:white;
+}
+
+footer .container{
+  padding:15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer .company:first-child{
+  font-size:1.1rem;
+  font-weight: 600;
+}
+
+footer .links a{
+  margin-right:5px;
+  font-size:0.6rem;
+}
+
+footer .container .social{
+  font-size:0.8rem;
+}
+
+footer .container .social *{
+  margin:3px 3px 0 0;
+}
